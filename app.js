@@ -18,10 +18,6 @@ app.use('/api', leadRouter);
 // Example webhook endpoint
 app.post('/webhook', async (req, res) => {
   console.log("Webhook received:", req.body);
-
-
-
-  
 });
 
 
@@ -32,6 +28,6 @@ app.use((err, req, res, next) => {
 });
 
 // Start the server
-app.listen(port, () => {
+app.listen(port,'0.0.0.0', () => {
   console.log(`Server running on port ${port}`);
 });
