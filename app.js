@@ -8,7 +8,7 @@ const axios = require('axios');
  // Make sure to require axios if it's not already
 
 const app = express();
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 80;
 
 app.use(express.json()); // Parse JSON bodies
 
